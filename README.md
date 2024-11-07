@@ -37,32 +37,42 @@ A responsive blog management system where an admin can create, edit, and publish
 ## Project Setup
 
 ### Frontend Setup
-1. Navigate to the `frontend` directory:
+
+Navigate to the `frontend` directory:
    ```bash
    cd frontend
    npm install
    npm run dev
+Install the dependencies:
+    ```bash
+    Copy code
+    npm install
+Run the development server:
+    ```bash
+    Copy code
+    npm run dev
+The frontend will be running on http://localhost:3000.
 
 
 ### Backend Setup
+
 Navigate to the backend directory:
-
-bash
-Copy code
-cd backend
-Install the dependencies:
-
-bash
-Copy code
-npm install
-Create the SQLite3 database by running the init.sql script:
-
-bash
-Copy code
-node db.js
-Start the backend server:
-
-bash
-Copy code
-npm start
-The backend will be running on http://localhost:5000.
+  bash
+  Copy code
+  cd backend
+  Install the dependencies:
+  
+  bash
+  Copy code
+  npm install
+  Create the SQLite3 database by running the init.sql script:
+  
+  bash
+  Copy code
+  node db.js
+  Start the backend server:
+  
+  bash
+  Copy code
+  npm start
+  The backend will be running on http://localhost:5000.
