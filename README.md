@@ -2,17 +2,6 @@
 
 A responsive blog management system where an admin can create, edit, and publish blog posts. Each post can include images, videos, meta tags, and SEO fields. The system is built with **Next.js**, **Tailwind CSS**, **Node.js**, and **SQLite3**.
 
-## Table of Contents
-
-- [Technologies Used](#technologies-used)
-- [Features](#features)
-- [Project Setup](#project-setup)
-  - [Frontend Setup](#frontend-setup)
-  - [Backend Setup](#backend-setup)
-- [Database Schema](#database-schema)
-- [Deployment](#deployment)
-- [Optional Enhancements](#optional-enhancements)
-- [License](#license)
 
 ## Technologies Used
 
