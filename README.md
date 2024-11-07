@@ -43,18 +43,20 @@ Navigate to the `frontend` directory:
    cd frontend
    npm install
    npm run dev
+
 Install the dependencies:
     ```bash
     Copy code
     npm install
+
 Run the development server:
     ```bash
     Copy code
     npm run dev
+
 The frontend will be running on http://localhost:3000.
 
-
-### Backend Setup
+# Backend Setup
 
 Navigate to the backend directory:
   bash
