@@ -26,7 +26,7 @@ const EditPost = ({ params }) => {
       setIsLoading(true);
       try {
         const id = params.id;
-        const response = await axios.get(`http://localhost:5000/posts/${id}`);
+        const response = await axios.get(`https://blogapp-5kma.onrender.com/posts/${id}`);
         const post = response.data;
 
         if (String(post.creator_id) !== String(userId)) {
@@ -56,7 +56,7 @@ const EditPost = ({ params }) => {
 
     try {
       const id = params.id;
-      await axios.put(`http://localhost:5000/posts/${id}`, postData);
+      await axios.put(`https://blogapp-5kma.onrender.com/posts/${id}`, postData);
       alert("Post updated successfully");
       router.push("/admin/dashboard");
     } catch (error) {

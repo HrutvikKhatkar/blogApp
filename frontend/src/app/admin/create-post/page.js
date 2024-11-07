@@ -28,7 +28,7 @@ const CreatePost = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/posts", postData);
+      await axios.post("https://blogapp-5kma.onrender.com/posts", postData);
       alert("Post created successfully");
       router.push("/admin/dashboard");
     } catch (error) {

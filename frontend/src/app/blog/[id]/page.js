@@ -14,7 +14,7 @@ const PostDetail = ({ params }) => {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/posts/${id}`);
+        const response = await axios.get(`https://blogapp-5kma.onrender.com/posts/${id}`);
         setPost(response.data); // This should be inside useEffect to avoid state updates during render
       } catch (error) {
         console.error("Failed to fetch post:", error);

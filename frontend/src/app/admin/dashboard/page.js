@@ -14,7 +14,7 @@ const Dashboard = () => {
 
   const fetchPosts = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/posts");
+      const response = await axios.get("https://blogapp-5kma.onrender.com/posts");
       const sortedPosts = response.data.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
 
       setPosts(sortedPosts);
@@ -25,7 +25,7 @@ const Dashboard = () => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:5000/posts/${id}`);
+      await axios.delete(`https://blogapp-5kma.onrender.com/posts/${id}`);
       alert("Post deleted successfully");
       setPosts(posts.filter((post) => post.id !== id)); // Remove deleted post from state
     } catch (error) {
