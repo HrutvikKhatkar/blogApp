@@ -23,10 +23,19 @@ A responsive blog management system where an admin can create, edit, and publish
 ## Features
 
 ### Admin Dashboard:
-- **Create New Blog Post**: Add a title, content, images, video links, and SEO fields (meta title, meta description, and tags).
-- **Edit Blog Post**: Edit all fields in existing posts, update images, video links, and SEO fields.
-- **Delete Blog Post**: Remove posts from the dashboard.
-- **Post List**: Display a list of all posts with titles, publish status, and creation date. Filter posts by status (published/draft).
+- **Create New Blog Post**: 
+  - Add a title, content, images, video links, and SEO fields (meta title, meta description, and tags).
+  - Set the post as published or draft.
+  
+- **Edit Blog Post**: 
+  - Edit all fields in existing posts, including title, content, images, video links, and SEO fields.
+  
+- **Delete Blog Post**: 
+  - Remove posts from the dashboard.
+  
+- **Post List**: 
+  - Display a list of all posts with titles, publish status, and creation date.
+  - Filter posts by status (published/draft).
 
 ### Blog Display Page:
 - Fetch and display blog posts on the frontend with images, videos, and SEO meta tags for search engine optimization.
@@ -38,43 +47,32 @@ A responsive blog management system where an admin can create, edit, and publish
 
 ### Frontend Setup
 
-Navigate to the `frontend` directory:
+1. Navigate to the `frontend` directory:
    ```bash
    cd frontend
+2. Install the dependencies:
+   ```bash
    npm install
+3. Run the development server:
+   ```bash
    npm run dev
+4. Run the development server:
+   ```bash
+   npm run dev
+5. The frontend will be running on http://localhost:3000.
 
-Install the dependencies:
-    ```bash
-    Copy code
-    npm install
+### Backend Setup
 
-Run the development server:
-    ```bash
-    Copy code
-    npm run dev
-
-The frontend will be running on http://localhost:3000.
-
-# Backend Setup
-
-Navigate to the backend directory:
-  bash
-  Copy code
-  cd backend
-  Install the dependencies:
-  
-  bash
-  Copy code
-  npm install
-  Create the SQLite3 database by running the init.sql script:
-  
-  bash
-  Copy code
-  node db.js
-  Start the backend server:
-  
-  bash
-  Copy code
-  npm start
-  The backend will be running on http://localhost:5000.
+1. Navigate to the `backend` directory:
+   ```bash
+   cd backend
+2. Install the dependencies:
+   ```bash
+   node db.js
+3. Run the development server:
+   ```bash
+   npm start
+4. Run the development server:
+   ```bash
+   npm run dev
+5. The backend will be running on http://localhost:5000.
