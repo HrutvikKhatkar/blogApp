@@ -20,7 +20,7 @@ const AdminIndex = () => {
             className="flex items-center justify-center bg-white border border-gray-300 shadow-md rounded-lg py-3 px-6 hover:bg-gray-100 transition-all"
           >
             <Image
-              src="https://image.similarpng.com/very-thumbnail/2020/06/Logo-google-icon-PNG.png"
+              source="https://image.similarpng.com/very-thumbnail/2020/06/Logo-google-icon-PNG.png"
               alt="Google logo"
               className="h-6 w-6 mr-3"
             />
