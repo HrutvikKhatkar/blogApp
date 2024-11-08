@@ -4,10 +4,9 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
 
 const PostDetail = ({ params }) => {
-  const { id } = params;
+  const  id  = params.id;
   const [post, setPost] = useState(null);
   const router = useRouter();
 
@@ -83,7 +82,7 @@ const PostDetail = ({ params }) => {
         {post.image_url && (
           <div className="mb-4">
             <h2 className="text-2xl font-semibold mb-2">Image</h2>
-            <Image
+            <img
               src={post.image_url}
               alt="Post Image"
               className="w-full h-auto rounded"
