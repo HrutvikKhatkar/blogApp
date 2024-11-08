@@ -3,7 +3,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Link from "next/link";
-import ProtectedRoute from "../../components/ProtectedRoute";
+import dynamic from 'next/dynamic';
+const ProtectedRoute = dynamic(() => import('../../components/ProtectedRoute'), { ssr: false });
 
 const Dashboard = () => {
   const [posts, setPosts] = useState([]);

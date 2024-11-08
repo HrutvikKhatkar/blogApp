@@ -1,7 +1,8 @@
-'use client';
+"use client";
 
 import Link from 'next/link';
 import { useSession, signIn } from "next-auth/react";
+import Image from 'next/image';
 
 const AdminIndex = () => {
   const { data: session } = useSession();
@@ -18,7 +19,7 @@ const AdminIndex = () => {
             onClick={() => signIn("google")} 
             className="flex items-center justify-center bg-white border border-gray-300 shadow-md rounded-lg py-3 px-6 hover:bg-gray-100 transition-all"
           >
-            <img
+            <Image
               src="https://image.similarpng.com/very-thumbnail/2020/06/Logo-google-icon-PNG.png"
               alt="Google logo"
               className="h-6 w-6 mr-3"
