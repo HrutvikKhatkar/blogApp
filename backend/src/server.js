@@ -1,6 +1,6 @@
 // server.js
 const express = require("express");
-const db = require("./db");
+const db = require("../db");
 const cors = require("cors");
 
 const app = express();
@@ -8,7 +8,7 @@ const PORT = 5000;
 
 // Middleware
 const jwt = require("jsonwebtoken");
-const SECRET_KEY = "your_secret_key"; // Replace with your actual secret key
+const SECRET_KEY = "your_secret_key"; 
 
 const authenticateUser = (req, res, next) => {
   const token = req.headers.authorization?.split(" ")[1];
