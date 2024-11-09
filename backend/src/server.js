@@ -2,7 +2,6 @@
 const express = require("express");
 const db = require("../db");
 const cors = require("cors");
-app.use(cors({ origin: 'https://blog-app-uy22.vercel.app/' }));
 
 const app = express();
 const PORT = 5000;
@@ -26,7 +25,9 @@ const authenticateUser = (req, res, next) => {
     return res.status(403).json({ message: "Invalid token" });
   }
 };
-app.use(cors());
+// app.use(cors());
+app.use(cors({ origin: 'https://blog-app-uy22.vercel.app' }));
+
 app.use(express.json());
 
 // Create a new blog post
