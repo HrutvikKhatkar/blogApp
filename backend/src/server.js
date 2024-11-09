@@ -2,6 +2,7 @@
 const express = require("express");
 const db = require("../db");
 const cors = require("cors");
+app.use(cors({ origin: 'https://blog-app-uy22.vercel.app/' }));
 
 const app = express();
 const PORT = 5000;
