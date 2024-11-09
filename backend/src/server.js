@@ -26,7 +26,7 @@ const authenticateUser = (req, res, next) => {
   }
 };
 // app.use(cors());
-app.use(cors({ origin: 'https://blog-app-uy22.vercel.app' }));
+app.use(cors({ origin: ['https://blog-app-uy22.vercel.app', 'https://accounts.google.com'] }));
 
 app.use(express.json());
 
